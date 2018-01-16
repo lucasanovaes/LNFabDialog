@@ -21,14 +21,14 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/lanovaes1@gmail.com/LNFabDialog'
+  s.homepage         = 'https://github.com/lucasanovaes/LNFabDialog'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'lanovaes1@gmail.com' => 'lanovaes1@gmail.com' }
-  s.source           = { :git => 'https://github.com/lanovaes1@gmail.com/LNFabDialog.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/lucasanovaes/LNFabDialog.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '9.3'
 
   s.source_files = 'LNFabDialog/Classes/**/*'
   

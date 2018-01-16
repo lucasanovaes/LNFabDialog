@@ -1,0 +1,22 @@
+{
+  "name": "LNFabDialog",
+  "version": "0.1.0",
+  "summary": "A short description of LNFabDialog.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/lanovaes1@gmail.com/LNFabDialog",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "lanovaes1@gmail.com": "lanovaes1@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/lanovaes1@gmail.com/LNFabDialog.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LNFabDialog/Classes/**/*"
+}

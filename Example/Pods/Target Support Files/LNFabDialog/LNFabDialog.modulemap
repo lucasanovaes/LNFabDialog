@@ -1,0 +1,6 @@
+framework module LNFabDialog {
+  umbrella header "LNFabDialog-umbrella.h"
+
+  export *
+  module * { export * }
+}

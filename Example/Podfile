@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'LNFabDialog_Example' do
+  pod 'LNFabDialog', :path => '../'
+
+  target 'LNFabDialog_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

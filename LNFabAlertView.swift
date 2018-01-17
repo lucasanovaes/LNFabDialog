@@ -33,7 +33,7 @@ class LNFabAlertView: UIView{
 
         // Refatorar o model para um unico objeto com uma propriedade [LNFabItemModel] que tem como um dos parametros o TITLE do alert
         
-        setTableViewHeader(title: "Publish in the event of:")
+        setTableViewHeader(title: "Publicarg no evento de:")
         setTableView()
         setAlertShadowLayer()
     }

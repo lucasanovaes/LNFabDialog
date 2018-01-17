@@ -134,9 +134,12 @@ open class LNFabDialogButton: UIView {
         self.superview?.addSubview(self.overlayView)
         
         self.alertIsOpen = !self.alertIsOpen
-        self.overlayView.fadeInWith {
+        
+        gself.overlayView.fadeInWith {
             self.delegate?.alertDidOpen?(self)
         }
+        
+        self.lnFabAlertView.fadeInWith {}
         
         overlayView.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
     }
@@ -149,6 +152,8 @@ open class LNFabDialogButton: UIView {
 
             self.delegate?.alertDidClose?(self)
         }
+        
+        self.lnFabAlertView.fadeOutWith {}
     }
     
     fileprivate func showAlertView(){

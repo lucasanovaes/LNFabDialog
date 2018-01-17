@@ -16,7 +16,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="LNFabItemTableViewCell" customModule="LNFabDialog" customModuleProvider="target">
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LNFabItem" id="KGk-i7-Jjw" customClass="LNFabItemTableViewCell" customModule="LNFabDialog" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="320" height="56"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
@@ -30,19 +30,25 @@
                             <constraint firstAttribute="width" constant="40" id="lCs-44-pgA"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJE-d3-9WZ">
-                        <rect key="frame" x="78" y="17" width="42" height="21"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rJE-d3-9WZ">
+                        <rect key="frame" x="80" y="17" width="224" height="19"/>
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                         <nil key="highlightedColor"/>
                     </label>
                 </subviews>
                 <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rJE-d3-9WZ" secondAttribute="trailing" constant="16" id="9sz-Py-RAD"/>
+                    <constraint firstItem="rJE-d3-9WZ" firstAttribute="leading" secondItem="xiP-XW-Mhz" secondAttribute="trailing" constant="16" id="HU7-hz-8ld"/>
+                    <constraint firstItem="rJE-d3-9WZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="Hse-jd-iEx"/>
                     <constraint firstItem="xiP-XW-Mhz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ZyK-Cs-WX7"/>
                     <constraint firstAttribute="bottom" secondItem="xiP-XW-Mhz" secondAttribute="bottom" constant="8" id="avo-g2-YaH"/>
                     <constraint firstItem="xiP-XW-Mhz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="vuu-V0-6TH"/>
                 </constraints>
             </tableViewCellContentView>
+            <connections>
+                <outlet property="icon" destination="xiP-XW-Mhz" id="mRM-FU-PZW"/>
+                <outlet property="titleText" destination="rJE-d3-9WZ" id="VRQ-cy-dk3"/>
+            </connections>
         </tableViewCell>
     </objects>
 </document>

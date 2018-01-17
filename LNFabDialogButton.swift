@@ -9,7 +9,6 @@
 import UIKit
 import Foundation
 
-
 @IBDesignable
 open class LNFabDialogButton: UIView {
     
@@ -41,19 +40,15 @@ open class LNFabDialogButton: UIView {
     
     @IBInspectable open var overlayColor: UIColor = UIColor.black.withAlphaComponent(0.5)
 
-    
-    fileprivate var lnFabAlertView: LNFabAlertView = LNFabAlertView()
+    fileprivate var lnFabAlertView: LNFabAlertView!
     
     fileprivate var alertIsOpen = false{
         didSet{
             self.isHidden = alertIsOpen
+            self.lnFabAlertView.isHidden = !alertIsOpen
         }
     }
-    
-    
-    /** LNFabItemTableViewCell Layout */
-    open var lnFabItemLayout = LNFabItemLayout(font: UIFont(), textColor: UIColor.black.withAlphaComponent(0.87))
-    
+
     
     // MARK: Initializers
     
@@ -61,21 +56,18 @@ open class LNFabDialogButton: UIView {
     public init(){
         super.init(frame: CGRect(x: 0, y: 0, width: size, height: size))
         backgroundColor = UIColor.clear
-        layer.cornerRadius = size / 2
     }
     
     /** Initialization with custom size */
     public init(size: CGFloat){
         super.init(frame: CGRect(x: 0, y: 0, width: size, height: size))
         backgroundColor = UIColor.clear
-        layer.cornerRadius = size / 2
     }
 
     /** Initialization with custom frame */
     public override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = UIColor.clear
-        layer.cornerRadius = size / 2
     }
     
     /** Initialize from storyboard. */
@@ -93,6 +85,11 @@ open class LNFabDialogButton: UIView {
         setButtonLayer()
         setButtonImage()
         setButtonShadow()
+    }
+    
+    open func setup(model: [LNFabItemModel], delegate: LNFabDialogButtonDelegate? = nil){
+        self.lnFabAlertView = LNFabAlertView(delegate: self, models: model)
+        self.delegate = delegate
     }
     
     // MARK: Prepare Methods
@@ -136,9 +133,9 @@ open class LNFabDialogButton: UIView {
         
         self.superview?.addSubview(self.overlayView)
         
+        self.alertIsOpen = !self.alertIsOpen
         self.overlayView.fadeInWith {
-            self.alertIsOpen = !self.alertIsOpen
-            self.delegate?.alertDidOpen(self)
+            self.delegate?.alertDidOpen?(self)
         }
         
         overlayView.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
@@ -150,20 +147,22 @@ open class LNFabDialogButton: UIView {
 
             self.overlayView.removeFromSuperview()
 
-            self.delegate?.alertDidClose(self)
+            self.delegate?.alertDidClose?(self)
         }
     }
     
     fileprivate func showAlertView(){
-        delegate?.alertWillOpen(self)
+    
+        delegate?.alertWillOpen?(self)
         
         showOverlayView()
         
-        // exibir alerta
+        superview?.addSubview(lnFabAlertView)
+        superview?.bringSubview(toFront: lnFabAlertView)
     }
     
     fileprivate func closeAlertView(){
-        delegate?.alertWillClose(self)
+        delegate?.alertWillClose?(self)
         
         closeOverlayView()
         // remover alerta
@@ -171,11 +170,11 @@ open class LNFabDialogButton: UIView {
     
     // MARK: LNFabDialogButtonDelegate
     open override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        delegate?.buttonTouchesBegan(self)
+        delegate?.buttonTouchesBegan?(self)
     }
     
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-        delegate?.buttonTouchesEnded(self)
+        delegate?.buttonTouchesEnded?(self)
 
         showAlertView()
     }
@@ -183,3 +182,12 @@ open class LNFabDialogButton: UIView {
     
 }
 
+
+// MARK: LNFabAlertViewDelegate
+extension LNFabDialogButton: LNFabAlertViewDelegate{
+    
+    func didSelectRow(_ tableView: UITableView, at indexPath: IndexPath) {
+        delegate?.didSelect?(tableView, at: indexPath)
+    }
+    
+}

@@ -39,6 +39,9 @@
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="V2v-3m-Z45" secondAttribute="bottom" constant="30" id="fpq-we-DOs"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lnFabDialogButton" destination="V2v-3m-Z45" id="CD7-B6-Pnq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>

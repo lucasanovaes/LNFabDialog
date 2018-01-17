@@ -7,18 +7,27 @@
 //
 
 import UIKit
+import LNFabDialog
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var lnFabDialogButton: LNFabDialogButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        lnFabDialogButton.setup(model: [LNFabItemModel(title: "Lucas", image: #imageLiteral(resourceName: "icon_edit_white")), LNFabItemModel(title: "Gaby", image: #imageLiteral(resourceName: "icon_edit_white"))], delegate: self)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
 
 }
 
+
+extension ViewController: LNFabDialogButtonDelegate{
+    
+    func didSelect(_ tableView: UITableView, at indexPath: IndexPath) {
+        print(indexPath)
+    }
+    
+    
+}

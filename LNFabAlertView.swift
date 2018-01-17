@@ -15,16 +15,7 @@ protocol LNFabAlertViewDelegate: class{
 class LNFabAlertView: UIView{
     
     fileprivate var tableView = UITableView()
-    
-    fileprivate lazy var tableViewHeader: UIView = {
-        let tableViewHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width))
-        
-        let supportText = UILabel(frame: CGRect(x: 24, y: 24, width: UIScreen.main.bounds.width - 48, height: 24))
-        supportText.text = "Publicar no evento de:"
-        tableViewHeaderView.addSubview(supportText)
-
-        return tableViewHeaderView
-    }()
+    fileprivate var tableViewHeader = UIView()
     
     weak var delegate: LNFabAlertViewDelegate?
 
@@ -37,9 +28,12 @@ class LNFabAlertView: UIView{
     init(delegate: LNFabAlertViewDelegate, models: [LNFabItemModel]) {
         self.delegate = delegate
         self.models = models
-        
+    
         super.init(frame: LNFabAlertView.alertFrame(models: models))
 
+        // Refatorar o model para um unico objeto com uma propriedade [LNFabItemModel] que tem como um dos parametros o TITLE do alert
+        
+        setTableViewHeader(title: "Publish in the event of:")
         setTableView()
         setAlertShadowLayer()
     }
@@ -60,21 +54,6 @@ class LNFabAlertView: UIView{
         tableView.reloadData()
     }
     
-    // Issue #1 - Implement dynamic LNFabAlertView item (UITableViewCell) size.
-    private static func alertFrame(models: [LNFabItemModel]) -> CGRect{
-        let screenSize = UIScreen.main.bounds
-        
-        let maxAlertWidth: CGFloat = 336
-        let sideSpace: CGFloat = 20
-        
-        let alertWidth = screenSize.width - CGFloat(sideSpace * 2) // Calculating alert width base on side spaces and screen width
-        let finalAlertWidth = alertWidth > maxAlertWidth ? maxAlertWidth : alertWidth
-        
-        let alertHeight: CGFloat = CGFloat(models.count * 56) + 68
-        
-        return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - (alertHeight / 2), width: finalAlertWidth, height: alertHeight)
-    }
-    
     fileprivate func setAlertShadowLayer() {
         alertLayer.frame = CGRect(x: 0, y: 0, width: frame.size.width, height: frame.size.height)
         alertLayer.backgroundColor = UIColor.white.cgColor
@@ -86,6 +65,29 @@ class LNFabAlertView: UIView{
         alertLayer.shadowRadius = 8
         alertLayer.shadowColor = UIColor.black.cgColor
         alertLayer.shadowOpacity = 0.4
+    }
+    
+    private func setTableViewHeader(title: String){
+        tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width))
+        
+        let supportText = UILabel(frame: CGRect(x: 24, y: 24, width: UIScreen.main.bounds.width - 48, height: 24))
+        supportText.text = title
+        tableViewHeader.addSubview(supportText)
+    }
+    
+    // Issue #1 - Implement dynamic LNFabAlertView item (UITableViewCell) size.
+    private static func alertFrame(models: [LNFabItemModel]) -> CGRect{
+        let screenSize = UIScreen.main.bounds
+        
+        let maxAlertWidth: CGFloat = 336
+        let sideSpace: CGFloat = 20
+        
+        let alertWidth = screenSize.width - CGFloat(sideSpace * 2) // Calculating alert width base on side spaces and screen width
+        let finalAlertWidth = alertWidth > maxAlertWidth ? maxAlertWidth : alertWidth
+        
+        let alertHeight: CGFloat = CGFloat(models.count * 56) + 68 // 68 = Header height
+        
+        return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - (alertHeight / 2), width: finalAlertWidth, height: alertHeight)
     }
     
 }

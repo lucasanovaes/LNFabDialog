@@ -151,11 +151,6 @@ open class LNFabDialogButton: UIView {
         self.overlayView.fadeOutWith {
             self.overlayView.removeFromSuperview()
         }
-        
-        self.lnFabAlertView.fadeOutWith {
-            self.lnFabAlertView.removeFromSuperview()
-            self.delegate?.alertDidClose?(self)
-        }
     }
     
     fileprivate func showAlertView(){

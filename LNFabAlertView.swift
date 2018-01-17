@@ -16,6 +16,16 @@ class LNFabAlertView: UIView{
     
     fileprivate var tableView = UITableView()
     
+    fileprivate lazy var tableViewHeader: UIView = {
+        let tableViewHeaderView = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width))
+        
+        let supportText = UILabel(frame: CGRect(x: 24, y: 24, width: UIScreen.main.bounds.width - 48, height: 24))
+        supportText.text = "Publicar no evento de:"
+        tableViewHeaderView.addSubview(supportText)
+
+        return tableViewHeaderView
+    }()
+    
     weak var delegate: LNFabAlertViewDelegate?
 
     var models: [LNFabItemModel]
@@ -60,9 +70,9 @@ class LNFabAlertView: UIView{
         let alertWidth = screenSize.width - CGFloat(sideSpace * 2) // Calculating alert width base on side spaces and screen width
         let finalAlertWidth = alertWidth > maxAlertWidth ? maxAlertWidth : alertWidth
         
-        let alertHeight: CGFloat = CGFloat(models.count * 56)
+        let alertHeight: CGFloat = CGFloat(models.count * 56) + 68
         
-        return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - alertHeight, width: finalAlertWidth, height: alertHeight)
+        return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - (alertHeight / 2), width: finalAlertWidth, height: alertHeight)
     }
     
     fileprivate func setAlertShadowLayer() {
@@ -93,12 +103,21 @@ extension LNFabAlertView: UITableViewDelegate, UITableViewDataSource{
         return cell
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        return tableViewHeader
+    }
+    
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
         delegate?.didSelectRow(tableView, at: indexPath)
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 56
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 68
     }
     
 }

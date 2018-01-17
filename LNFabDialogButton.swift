@@ -42,10 +42,13 @@ open class LNFabDialogButton: UIView {
 
     fileprivate var lnFabAlertView: LNFabAlertView!
     
-    fileprivate var alertIsOpen = false{
+    fileprivate var alertShouldShow = false{
         didSet{
-            self.isHidden = alertIsOpen
-            self.lnFabAlertView.isHidden = !alertIsOpen
+            if alertShouldShow{
+                showAlertView()
+            }else{
+                closeAlertView()
+            }
         }
     }
 
@@ -133,44 +136,50 @@ open class LNFabDialogButton: UIView {
         
         self.superview?.addSubview(self.overlayView)
         
-        self.alertIsOpen = !self.alertIsOpen
-        
-        gself.overlayView.fadeInWith {
-            self.delegate?.alertDidOpen?(self)
-        }
-        
-        self.lnFabAlertView.fadeInWith {}
-        
-        overlayView.addTarget(self, action: #selector(closeOverlayView), for: .touchUpInside)
+        self.overlayView.fadeInWith { }
+    
+        overlayView.addTarget(self, action: #selector(switchAlertStatus), for: .touchUpInside)
     }
     
-    fileprivate dynamic func closeOverlayView(){
+    dynamic fileprivate func switchAlertStatus(){
+        alertShouldShow = !alertShouldShow
+    }
+    
+    fileprivate func closeOverlayView(){
+        delegate?.alertWillClose?(self)
+        
         self.overlayView.fadeOutWith {
-            self.alertIsOpen = !self.alertIsOpen
-
             self.overlayView.removeFromSuperview()
-
-            self.delegate?.alertDidClose?(self)
         }
         
-        self.lnFabAlertView.fadeOutWith {}
+        self.lnFabAlertView.fadeOutWith {
+            self.lnFabAlertView.removeFromSuperview()
+            self.delegate?.alertDidClose?(self)
+        }
     }
     
     fileprivate func showAlertView(){
-    
         delegate?.alertWillOpen?(self)
         
         showOverlayView()
         
         superview?.addSubview(lnFabAlertView)
         superview?.bringSubview(toFront: lnFabAlertView)
+        
+        self.lnFabAlertView.fadeInWith {
+            self.delegate?.alertDidOpen?(self)
+        }
     }
     
     fileprivate func closeAlertView(){
         delegate?.alertWillClose?(self)
         
         closeOverlayView()
-        // remover alerta
+        
+        self.lnFabAlertView.fadeOutWith {
+            self.lnFabAlertView.removeFromSuperview()
+            self.delegate?.alertDidClose?(self)
+        }
     }
     
     // MARK: LNFabDialogButtonDelegate
@@ -180,8 +189,7 @@ open class LNFabDialogButton: UIView {
     
     open override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
         delegate?.buttonTouchesEnded?(self)
-
-        showAlertView()
+        switchAlertStatus()
     }
 
     
@@ -193,6 +201,7 @@ extension LNFabDialogButton: LNFabAlertViewDelegate{
     
     func didSelectRow(_ tableView: UITableView, at indexPath: IndexPath) {
         delegate?.didSelect?(tableView, at: indexPath)
+        switchAlertStatus()
     }
     
 }

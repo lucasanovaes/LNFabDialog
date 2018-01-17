@@ -15,6 +15,7 @@ class LNFabItemTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        selectionStyle = .none
     }
     
     func fill(model: LNFabItemModel){

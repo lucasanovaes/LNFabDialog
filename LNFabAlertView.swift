@@ -46,7 +46,6 @@ class LNFabAlertView: UIView{
         tableView.dataSource = self
         tableView.separatorStyle = .none
         tableView.isScrollEnabled = false
-        tableView.layer.masksToBounds = true
         tableView.register(UINib(nibName: "LNFabItemTableViewCell", bundle: Bundle(for: LNFabItemTableViewCell.self)), forCellReuseIdentifier: tableViewCellIdentifier)
         tableView.reloadData()
     }
@@ -77,7 +76,6 @@ class LNFabAlertView: UIView{
         alertLayer.shadowRadius = 8
         alertLayer.shadowColor = UIColor.black.cgColor
         alertLayer.shadowOpacity = 0.4
-        
     }
     
 }

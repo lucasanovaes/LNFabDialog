@@ -37,6 +37,12 @@ internal class LNFabItemTableViewCell: UITableViewCell {
             return
         }
         
+        if model.image == nil && model.imageUrl == nil{
+            if model.placeholderImage != nil{
+                self.icon.image = model.placeholderImage!
+            }
+        }
+        
         URLSession.shared.dataTask(with: model.imageUrl!) { [weak self] (data, response, error) in
             if error == nil && data != nil{
                 DispatchQueue.main.async {

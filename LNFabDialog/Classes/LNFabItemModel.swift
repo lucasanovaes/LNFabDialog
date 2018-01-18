@@ -19,16 +19,21 @@ open class LNFabItemModel{
         var title: String
         var image: UIImage?
         var imageUrl: URL?
+        var placeholderImage: UIImage?
         var layout: LNFabItemLayout?
         
-        public init(title: String, image: UIImage?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
+        public init(title: String, image: UIImage?, placeholderImage: UIImage?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
             self.title = title
             self.image = image
+            self.placeholderImage = placeholderImage
+            self.layout = layout
         }
         
-        public init(title: String, imageUrl: URL?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))){
+        public init(title: String, imageUrl: URL?, placeholderImage: UIImage?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))){
             self.title = title
             self.imageUrl = imageUrl
+            self.placeholderImage = placeholderImage
+            self.layout = layout
         }
     }
     

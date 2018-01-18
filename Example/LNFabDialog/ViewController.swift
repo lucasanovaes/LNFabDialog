@@ -15,8 +15,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let lnItemModel = LNFabItemModel(itens: [LNFabItemModel.Item(title: "Lucas", imageUrl: URL(string: "https://pbs.twimg.com/profile_images/831993825635745796/HnVmB0-k.jpg")!), LNFabItemModel.Item(title: "Gaby", image: #imageLiteral(resourceName: "icon_edit_white"))], sectionTitle: "Publicar no evento de:", sectionFont: nil)
+                
+        let lnItemModel = LNFabItemModel(itens: [LNFabItemModel.Item(title: "Lucas", imageUrl: URL(string: "https://pbs.twimg.com/profile_images/831993825635745796/HnVmB0-k.jpg"), placeholderImage: nil), LNFabItemModel.Item(title: "Gaby", image: #imageLiteral(resourceName: "icon_edit_white"), placeholderImage: nil)], sectionTitle: "Publicar no evento de:", sectionFont: nil)
         
         lnFabDialogButton.setup(model: lnItemModel, delegate: self)
     }

@@ -29,17 +29,15 @@ Simple dialog following Google Material Design specs.
   s.author           = { 'Lucas Novaes' => 'lanovaes1@gmail.com' }
   s.source           = { :git => 'https://github.com/lucasanovaes/LNFabDialog.git', :tag => s.version.to_s }
 
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
   s.ios.deployment_target = '9.0'
 
-  s.source_files = 'LNFabDialog/Classes/**/*'
-  
+  s.source_files = 'LNFabDialog/Classes/**/*', 
+  s.frameworks = 'UIKit', 'Foundation'
+
   # s.resource_bundles = {
   #   'LNFabDialog' => ['LNFabDialog/Assets/*.png']
   # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

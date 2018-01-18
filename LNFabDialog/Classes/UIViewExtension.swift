@@ -2,7 +2,7 @@
 //  UIViewExtension.swift
 //  Pods
 //
-//  Created by iCasei Site on 17/01/2018.
+//  Created by iCasei Site on 18/01/2018.
 //
 //
 
@@ -35,5 +35,5 @@ extension UIView{
             completion()
         }
     }
-    
+
 }

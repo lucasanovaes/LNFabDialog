@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C2FBB632010BE6100A81AE5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FBB622010BE6100A81AE5 /* UIViewExtension.swift */; };
 		4C3BE2BD2010B6A3005F0DB3 /* LNFabAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B62010B6A3005F0DB3 /* LNFabAlertView.swift */; };
 		4C3BE2BE2010B6A3005F0DB3 /* LNFabDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B72010B6A3005F0DB3 /* LNFabDialogButton.swift */; };
 		4C3BE2BF2010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B82010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift */; };
 		4C3BE2C02010B6A3005F0DB3 /* LNFabItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B92010B6A3005F0DB3 /* LNFabItemLayout.swift */; };
 		4C3BE2C12010B6A3005F0DB3 /* LNFabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2BA2010B6A3005F0DB3 /* LNFabItemModel.swift */; };
 		4C3BE2C22010B6A3005F0DB3 /* LNFabItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2BB2010B6A3005F0DB3 /* LNFabItemTableViewCell.swift */; };
-		4C3BE2C52010B6C5005F0DB3 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2C42010B6C5005F0DB3 /* UIViewExtension.swift */; };
 		52A1F3F8857FF027231FFCA461BD8F06 /* Pods-LNFabDialog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 669971934E3DB95A15BACC5D614402B0 /* Pods-LNFabDialog_Example-dummy.m */; };
 		86DB873718A704086B1E8B9AEC30AD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
 		9339F79A4D51D57909013F2CCFEE4394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
@@ -42,6 +42,7 @@
 		1F1FE66E3128D7D5884D8E8BC0C7C52B /* LNFabDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNFabDialog-dummy.m"; sourceTree = "<group>"; };
 		2A5D64706E026B55AEA228467755FCD7 /* LNFabDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNFabDialog-prefix.pch"; sourceTree = "<group>"; };
 		49CF02B69C9D976D6075DB4B59F8709D /* LNFabDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LNFabDialog.modulemap; sourceTree = "<group>"; };
+		4C2FBB622010BE6100A81AE5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = LNFabDialog/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
 		4C3BE2B62010B6A3005F0DB3 /* LNFabAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabAlertView.swift; path = LNFabDialog/Classes/LNFabAlertView.swift; sourceTree = "<group>"; };
 		4C3BE2B72010B6A3005F0DB3 /* LNFabDialogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabDialogButton.swift; path = LNFabDialog/Classes/LNFabDialogButton.swift; sourceTree = "<group>"; };
 		4C3BE2B82010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabDialogButtonDelegate.swift; path = LNFabDialog/Classes/LNFabDialogButtonDelegate.swift; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		4C3BE2BA2010B6A3005F0DB3 /* LNFabItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabItemModel.swift; path = LNFabDialog/Classes/LNFabItemModel.swift; sourceTree = "<group>"; };
 		4C3BE2BB2010B6A3005F0DB3 /* LNFabItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabItemTableViewCell.swift; path = LNFabDialog/Classes/LNFabItemTableViewCell.swift; sourceTree = "<group>"; };
 		4C3BE2BC2010B6A3005F0DB3 /* LNFabItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LNFabItemTableViewCell.xib; path = LNFabDialog/Classes/LNFabItemTableViewCell.xib; sourceTree = "<group>"; };
-		4C3BE2C42010B6C5005F0DB3 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		62623629FF0F2914452083C4A87DB702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6455578A493BA6B76EC455E413F2DD2E /* LNFabDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNFabDialog-umbrella.h"; sourceTree = "<group>"; };
 		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -133,18 +133,9 @@
 				4C3BE2BA2010B6A3005F0DB3 /* LNFabItemModel.swift */,
 				4C3BE2BB2010B6A3005F0DB3 /* LNFabItemTableViewCell.swift */,
 				4C3BE2BC2010B6A3005F0DB3 /* LNFabItemTableViewCell.xib */,
-				4C3BE2C32010B6C5005F0DB3 /* Extensions */,
+				4C2FBB622010BE6100A81AE5 /* UIViewExtension.swift */,
 			);
 			name = Classes;
-			sourceTree = "<group>";
-		};
-		4C3BE2C32010B6C5005F0DB3 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				4C3BE2C42010B6C5005F0DB3 /* UIViewExtension.swift */,
-			);
-			name = Extensions;
-			path = LNFabDialog/Extensions;
 			sourceTree = "<group>";
 		};
 		536A8251CF9BB5AD2824AECACDF8C4FD /* Support Files */ = {
@@ -385,7 +376,7 @@
 				4C3BE2BE2010B6A3005F0DB3 /* LNFabDialogButton.swift in Sources */,
 				E7F79CEE8912B363284DEDF195C1AB6F /* LNFabDialog-dummy.m in Sources */,
 				4C3BE2BD2010B6A3005F0DB3 /* LNFabAlertView.swift in Sources */,
-				4C3BE2C52010B6C5005F0DB3 /* UIViewExtension.swift in Sources */,
+				4C2FBB632010BE6100A81AE5 /* UIViewExtension.swift in Sources */,
 				4C3BE2C22010B6A3005F0DB3 /* LNFabItemTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

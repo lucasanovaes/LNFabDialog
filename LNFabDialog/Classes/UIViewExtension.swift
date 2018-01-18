@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension UIView{
+internal extension UIView{
     
     /// Fade in a view with a duration
     ///

@@ -12,7 +12,7 @@ protocol LNFabAlertViewDelegate: class{
     func didSelectRow(_ tableView: UITableView, at indexPath: IndexPath)
 }
 
-class LNFabAlertView: UIView{
+internal class LNFabAlertView: UIView{
     
     fileprivate var tableView = UITableView()
     fileprivate var tableViewHeader = UIView()

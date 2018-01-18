@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LNFabItemTableViewCell: UITableViewCell {
+internal class LNFabItemTableViewCell: UITableViewCell {
     
     @IBOutlet private var icon: UIImageView!
     @IBOutlet private var titleText: UILabel!

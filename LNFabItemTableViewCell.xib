@@ -23,7 +23,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="55.5"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-XW-Mhz">
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xiP-XW-Mhz">
                         <rect key="frame" x="24" y="7" width="40" height="40"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="40" id="98l-of-qQW"/>
@@ -35,6 +35,13 @@
                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="NHX-nK-c2c">
+                        <rect key="frame" x="34" y="17" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="MB0-ps-toa"/>
+                            <constraint firstAttribute="height" constant="20" id="zAS-NI-kXX"/>
+                        </constraints>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="rJE-d3-9WZ" secondAttribute="trailing" constant="16" id="9sz-Py-RAD"/>
@@ -42,10 +49,13 @@
                     <constraint firstItem="rJE-d3-9WZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="Hse-jd-iEx"/>
                     <constraint firstItem="xiP-XW-Mhz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="ZyK-Cs-WX7"/>
                     <constraint firstAttribute="bottom" secondItem="xiP-XW-Mhz" secondAttribute="bottom" constant="8" id="avo-g2-YaH"/>
+                    <constraint firstItem="NHX-nK-c2c" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="34" id="mrE-fz-NFZ"/>
+                    <constraint firstItem="NHX-nK-c2c" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="s5g-dT-Hrd"/>
                     <constraint firstItem="xiP-XW-Mhz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="vuu-V0-6TH"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="activityIndicator" destination="NHX-nK-c2c" id="lm1-6u-TQt"/>
                 <outlet property="icon" destination="xiP-XW-Mhz" id="mRM-FU-PZW"/>
                 <outlet property="titleText" destination="rJE-d3-9WZ" id="VRQ-cy-dk3"/>
             </connections>

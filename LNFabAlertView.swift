@@ -19,21 +19,21 @@ class LNFabAlertView: UIView{
     
     weak var delegate: LNFabAlertViewDelegate?
 
-    var models: [LNFabItemModel]
+    var model: LNFabItemModel
     
     var alertLayer = CAShapeLayer()
     
     fileprivate let tableViewCellIdentifier = "LNFabItem"
     
-    init(delegate: LNFabAlertViewDelegate, models: [LNFabItemModel]) {
+    init(delegate: LNFabAlertViewDelegate, model: LNFabItemModel) {
         self.delegate = delegate
-        self.models = models
+        self.model = model
     
-        super.init(frame: LNFabAlertView.alertFrame(models: models))
+        super.init(frame: LNFabAlertView.alertFrame(model: model))
 
         // Refatorar o model para um unico objeto com uma propriedade [LNFabItemModel] que tem como um dos parametros o TITLE do alert
         
-        setTableViewHeader(title: "Publicarg no evento de:")
+        setTableViewHeader(title: model.sectionTitle)
         setTableView()
         setAlertShadowLayer()
     }
@@ -76,7 +76,7 @@ class LNFabAlertView: UIView{
     }
     
     // Issue #1 - Implement dynamic LNFabAlertView item (UITableViewCell) size.
-    private static func alertFrame(models: [LNFabItemModel]) -> CGRect{
+    private static func alertFrame(model: LNFabItemModel) -> CGRect{
         let screenSize = UIScreen.main.bounds
         
         let maxAlertWidth: CGFloat = 336
@@ -85,7 +85,7 @@ class LNFabAlertView: UIView{
         let alertWidth = screenSize.width - CGFloat(sideSpace * 2) // Calculating alert width base on side spaces and screen width
         let finalAlertWidth = alertWidth > maxAlertWidth ? maxAlertWidth : alertWidth
         
-        let alertHeight: CGFloat = CGFloat(models.count * 56) + 68 // 68 = Header height
+        let alertHeight: CGFloat = CGFloat(model.itens.count * 56) + 68 // 68 = Header height
         
         return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - (alertHeight / 2), width: finalAlertWidth, height: alertHeight)
     }
@@ -96,12 +96,12 @@ class LNFabAlertView: UIView{
 extension LNFabAlertView: UITableViewDelegate, UITableViewDataSource{
     
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return models.count
+        return model.itens.count
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: tableViewCellIdentifier) as! LNFabItemTableViewCell
-        cell.fill(model: models[indexPath.row])
+        cell.fill(model: model.itens[indexPath.row])
         return cell
     }
     

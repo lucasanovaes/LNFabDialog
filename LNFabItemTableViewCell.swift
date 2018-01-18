@@ -12,12 +12,15 @@ class LNFabItemTableViewCell: UITableViewCell {
     
     @IBOutlet private var icon: UIImageView!
     @IBOutlet private var titleText: UILabel!
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
+    override func draw(_ rect: CGRect) {
+        super.draw(rect)
+        icon.layer.masksToBounds = true
+        icon.layer.cornerRadius = icon.frame.size.width / 2
     }
     
-    func fill(model: LNFabItemModel){
+    func fill(model: LNFabItemModel.Item){
     
         titleText.font = model.layout?.font
         titleText.textColor = model.layout?.textColor
@@ -29,13 +32,19 @@ class LNFabItemTableViewCell: UITableViewCell {
             icon.image = model.image
         }
         
-        guard model.imageUrl != nil else { return }
+        guard model.imageUrl != nil else {
+            activityIndicator.removeFromSuperview()
+            return
+        }
         
         URLSession.shared.dataTask(with: model.imageUrl!) { [weak self] (data, response, error) in
             if error == nil && data != nil{
-                self?.icon.image = UIImage(data: data!)
+                DispatchQueue.main.async {
+                    self?.icon.image = UIImage(data: data!)
+                    self?.activityIndicator.removeFromSuperview()
+                }
             }
-        }
+        }.resume()
     
     }
 

@@ -44,14 +44,18 @@ open class LNFabDialogButton: UIView {
     
     fileprivate var alertShouldShow = false{
         didSet{
-            if alertShouldShow{
-                showAlertView()
-            }else{
-                closeAlertView()
+            if shouldShowAutoAlert{
+                if alertShouldShow{
+                    showAlertView()
+                }else{
+                    closeAlertView()
+                }
             }
         }
     }
 
+    /// Specify if the alert should be showed automatically. Pass false to handle in delegate method
+    open var shouldShowAutoAlert = true
     
     // MARK: Initializers
     

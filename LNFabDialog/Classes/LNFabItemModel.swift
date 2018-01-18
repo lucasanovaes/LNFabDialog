@@ -21,12 +21,12 @@ open class LNFabItemModel{
         var imageUrl: URL?
         var layout: LNFabItemLayout?
         
-        public init(title: String, image: UIImage, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
+        public init(title: String, image: UIImage?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
             self.title = title
             self.image = image
         }
         
-        public init(title: String, imageUrl: URL, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))){
+        public init(title: String, imageUrl: URL?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))){
             self.title = title
             self.imageUrl = imageUrl
         }

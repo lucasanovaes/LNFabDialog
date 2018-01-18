@@ -90,8 +90,8 @@ open class LNFabDialogButton: UIView {
         setButtonShadow()
     }
     
-    open func setup(model: [LNFabItemModel], delegate: LNFabDialogButtonDelegate? = nil){
-        self.lnFabAlertView = LNFabAlertView(delegate: self, models: model)
+    open func setup(model: LNFabItemModel, delegate: LNFabDialogButtonDelegate? = nil){
+        self.lnFabAlertView = LNFabAlertView(delegate: self, model: model)
         self.delegate = delegate
     }
     
@@ -164,6 +164,8 @@ open class LNFabDialogButton: UIView {
         self.lnFabAlertView.fadeInWith {
             self.delegate?.alertDidOpen?(self)
         }
+        
+        self.fadeOutWith { }
     }
     
     fileprivate func closeAlertView(){
@@ -175,6 +177,9 @@ open class LNFabDialogButton: UIView {
             self.lnFabAlertView.removeFromSuperview()
             self.delegate?.alertDidClose?(self)
         }
+        
+        self.fadeInWith { }
+        
     }
     
     // MARK: LNFabDialogButtonDelegate

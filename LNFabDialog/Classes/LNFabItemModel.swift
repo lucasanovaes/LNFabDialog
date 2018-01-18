@@ -16,11 +16,11 @@ import Foundation
 open class LNFabItemModel{
     
     public struct Item{
-        var title: String
-        var image: UIImage?
-        var imageUrl: URL?
-        var placeholderImage: UIImage?
-        var layout: LNFabItemLayout?
+        public var title: String
+        public var image: UIImage?
+        public var imageUrl: URL?
+        public var placeholderImage: UIImage?
+        public var layout: LNFabItemLayout?
         
         public init(title: String, image: UIImage?, placeholderImage: UIImage?, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
             self.title = title
@@ -37,9 +37,9 @@ open class LNFabItemModel{
         }
     }
     
-    var itens: [Item]
-    var sectionTitle: String
-    var sectionFont: UIFont? = UIFont(name: "Arial", size: 20)
+    public var itens: [Item]
+    public var sectionTitle: String
+    public var sectionFont: UIFont? = UIFont(name: "Arial", size: 20)
     
     public init(itens: [Item], sectionTitle: String, sectionFont: UIFont?){
         self.itens = itens

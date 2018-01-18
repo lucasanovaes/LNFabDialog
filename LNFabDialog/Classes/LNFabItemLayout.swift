@@ -13,7 +13,7 @@ public struct LNFabItemLayout{
     var font: UIFont
     var textColor: UIColor
     
-    init(font: UIFont, textColor: UIColor){
+    public init(font: UIFont, textColor: UIColor){
         self.font = font
         self.textColor = textColor
     }

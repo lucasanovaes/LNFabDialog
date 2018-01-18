@@ -15,21 +15,31 @@ import Foundation
 
 open class LNFabItemModel{
     
-    var title: String
-    var image: UIImage?
-    var imageUrl: URL?
-    
-    var layout: LNFabItemLayout?
-    
-    public init(title: String, image: UIImage, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
-        self.title = title
-        self.image = image
+    public struct Item{
+        var title: String
+        var image: UIImage?
+        var imageUrl: URL?
+        var layout: LNFabItemLayout?
+        
+        public init(title: String, image: UIImage, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))) {
+            self.title = title
+            self.image = image
+        }
+        
+        public init(title: String, imageUrl: URL, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))){
+            self.title = title
+            self.imageUrl = imageUrl
+        }
     }
     
-    public init(title: String, imageUrl: URL, layout: LNFabItemLayout? = LNFabItemLayout(font: UIFont(name: "Arial", size: 16)!, textColor: UIColor.black.withAlphaComponent(0.87))){
-        self.title = title
-        self.imageUrl = imageUrl
+    var itens: [Item]
+    var sectionTitle: String
+    var sectionFont: UIFont? = UIFont(name: "Arial", size: 20)
+    
+    public init(itens: [Item], sectionTitle: String, sectionFont: UIFont?){
+        self.itens = itens
+        self.sectionTitle = sectionTitle
+        self.sectionFont = sectionFont
     }
-    
-    
+
 }

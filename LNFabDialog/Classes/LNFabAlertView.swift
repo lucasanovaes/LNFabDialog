@@ -16,6 +16,7 @@ internal class LNFabAlertView: UIView{
     
     fileprivate var tableView = UITableView()
     fileprivate var tableViewHeader = UIView()
+    fileprivate var tableViewFooter = UIView()
     
     weak var delegate: LNFabAlertViewDelegate?
 
@@ -43,13 +44,14 @@ internal class LNFabAlertView: UIView{
     }
     
     fileprivate func setTableView(){
-        tableView = UITableView(frame: self.bounds)
+        tableView = UITableView(frame: self.bounds, style: .grouped)
         addSubview(tableView)
         
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.showsVerticalScrollIndicator = false
+        tableView.backgroundColor = UIColor.white
         tableView.separatorStyle = .none
-        tableView.isScrollEnabled = false
         tableView.register(UINib(nibName: "LNFabItemTableViewCell", bundle: Bundle(for: LNFabItemTableViewCell.self)), forCellReuseIdentifier: tableViewCellIdentifier)
         tableView.reloadData()
     }
@@ -85,9 +87,23 @@ internal class LNFabAlertView: UIView{
         let alertWidth = screenSize.width - CGFloat(sideSpace * 2) // Calculating alert width base on side spaces and screen width
         let finalAlertWidth = alertWidth > maxAlertWidth ? maxAlertWidth : alertWidth
         
-        let alertHeight: CGFloat = CGFloat(model.itens.count * 56) + 68 // 68 = Header height
+        let alertFinalHeight = LNFabAlertView.alertHeight(model: model)
         
-        return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - (alertHeight / 2), width: finalAlertWidth, height: alertHeight)
+        return CGRect(x: (screenSize.width / 2) - finalAlertWidth / 2, y: (screenSize.height / 2) - (alertFinalHeight / 2), width: finalAlertWidth, height: alertFinalHeight)
+    }
+    
+    private static func alertHeight(model: LNFabItemModel) -> CGFloat{
+        let itemSize: CGFloat = 56.0
+        
+        let maxNumberOfItensInAlert: CGFloat = 5
+        
+        let alertInitialHeight = CGFloat(model.itens.count * Int(itemSize)) + 68
+        
+        if alertInitialHeight > itemSize * maxNumberOfItensInAlert{
+            return (itemSize * maxNumberOfItensInAlert) + 68
+        }
+        
+        return alertInitialHeight
     }
     
 }
@@ -106,7 +122,13 @@ extension LNFabAlertView: UITableViewDelegate, UITableViewDataSource{
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        tableViewHeader.backgroundColor = UIColor.white
         return tableViewHeader
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        tableViewFooter.backgroundColor = UIColor.white
+        return tableViewFooter
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -120,6 +142,10 @@ extension LNFabAlertView: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 68
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 20
     }
     
 }

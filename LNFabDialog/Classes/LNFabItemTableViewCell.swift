@@ -33,7 +33,7 @@ internal class LNFabItemTableViewCell: UITableViewCell {
         }
         
         guard model.imageUrl != nil else {
-            activityIndicator.removeFromSuperview()
+            activityIndicator.isHidden = true
             return
         }
         
@@ -47,7 +47,7 @@ internal class LNFabItemTableViewCell: UITableViewCell {
             if error == nil && data != nil{
                 DispatchQueue.main.async {
                     self?.icon.image = UIImage(data: data!)
-                    self?.activityIndicator.removeFromSuperview()
+                    self?.activityIndicator.isHidden = true
                 }
             }
         }.resume()

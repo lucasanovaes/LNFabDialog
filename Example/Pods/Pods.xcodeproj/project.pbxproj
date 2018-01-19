@@ -7,22 +7,24 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4C2FBB632010BE6100A81AE5 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FBB622010BE6100A81AE5 /* UIViewExtension.swift */; };
-		4C3BE2BD2010B6A3005F0DB3 /* LNFabAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B62010B6A3005F0DB3 /* LNFabAlertView.swift */; };
-		4C3BE2BE2010B6A3005F0DB3 /* LNFabDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B72010B6A3005F0DB3 /* LNFabDialogButton.swift */; };
-		4C3BE2BF2010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B82010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift */; };
-		4C3BE2C02010B6A3005F0DB3 /* LNFabItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2B92010B6A3005F0DB3 /* LNFabItemLayout.swift */; };
-		4C3BE2C12010B6A3005F0DB3 /* LNFabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2BA2010B6A3005F0DB3 /* LNFabItemModel.swift */; };
-		4C3BE2C22010B6A3005F0DB3 /* LNFabItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BE2BB2010B6A3005F0DB3 /* LNFabItemTableViewCell.swift */; };
+		1D190AB1EE9BCF254DE3056A1F7799B4 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CE2135DAE382ADB64E5D426912EDFD5 /* UIViewExtension.swift */; };
+		406C51890C01BAF1B3811DE0EB7BA692 /* LNFabItemTableViewCell.xib in Sources */ = {isa = PBXBuildFile; fileRef = 9B5B45C4A53B5EA9AD9CD9F5A7AE5390 /* LNFabItemTableViewCell.xib */; };
+		44C01D95C098E485DF3BA44BF7AF7F53 /* LNFabDialogButtonDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFE4D79F82B59EE52B44979D5D45CF4E /* LNFabDialogButtonDelegate.swift */; };
+		47B5E81DD26A139EC868CE22D493080A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */; };
 		52A1F3F8857FF027231FFCA461BD8F06 /* Pods-LNFabDialog_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 669971934E3DB95A15BACC5D614402B0 /* Pods-LNFabDialog_Example-dummy.m */; };
-		86DB873718A704086B1E8B9AEC30AD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		9339F79A4D51D57909013F2CCFEE4394 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		58AD13853A9BD06EAC650152BF497769 /* LNFabDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A2698A25B4BE5E29D05FA32B022E718 /* LNFabDialogButton.swift */; };
+		86DB873718A704086B1E8B9AEC30AD23 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		8D4A36263E591513787A824835B7EAE5 /* LNFabAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 366EA1D79D1E04670560498CA2B020B9 /* LNFabAlertView.swift */; };
+		973A27E950B5E4C3EFEB31457832CD02 /* LNFabItemLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2F10DD3230ACA690FA6C2E6DB57DC4BA /* LNFabItemLayout.swift */; };
 		A7BF09C04AAC805775F027937A6D74B2 /* Pods-LNFabDialog_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 938007092BD8C0BF31AAF5838B7C2B9F /* Pods-LNFabDialog_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C6E8A6EB08B3EE8CB0184606D6C751AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		D95C2D92626AB32984A16202FC6392F5 /* LNFabDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6455578A493BA6B76EC455E413F2DD2E /* LNFabDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD15439D680BF9D81D56269ACE56BE51 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		C6E8A6EB08B3EE8CB0184606D6C751AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */; };
+		D1BD3BB6AA9E2AB8D898894ADEB8E881 /* LNFabDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C18EBBE3FB29C64EB4AB155FAD9ED35 /* LNFabDialog-dummy.m */; };
+		D497580E7FB28B3F44C366E46C349ABE /* LNFabDialog-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 204CC5456BF8E64C180076EBC0CCB487 /* LNFabDialog-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DF1ED95DE5903A33BE602B2A90FF4B71 /* Pods-LNFabDialog_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 76C8D5DDB909E0CBBC68DE48DD86D857 /* Pods-LNFabDialog_Tests-dummy.m */; };
-		E7F79CEE8912B363284DEDF195C1AB6F /* LNFabDialog-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1FE66E3128D7D5884D8E8BC0C7C52B /* LNFabDialog-dummy.m */; };
+		E9996CF7D1B3A4C17CD74CABC2BF28D9 /* LNFabItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E45252F240DBFB2CDC23DED870034C1F /* LNFabItemTableViewCell.swift */; };
 		F4A3DC833570532DEA425D57AECACC9E /* Pods-LNFabDialog_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D50C9B748C56F0BC4C56329BC87C51D5 /* Pods-LNFabDialog_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F605F4EFCF8478E7CD1D9B3FB8CEB2E2 /* LNFabItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4C0C5C9A2C9A6FE9EA3605C7D2DD653 /* LNFabItemModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,7 +32,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F8679BB2BC731D8FD0ABE826F50CA898;
+			remoteGlobalIDString = 4EA88F6A4CFA1D28AF544ABB0900F677;
 			remoteInfo = LNFabDialog;
 		};
 /* End PBXContainerItemProxy section */
@@ -38,51 +40,53 @@
 /* Begin PBXFileReference section */
 		0C4BA3FAF68BC0CEEBD4B2C516AC925E /* Pods-LNFabDialog_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LNFabDialog_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		118330B4AFF86BDC024763AF248406BD /* Pods-LNFabDialog_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNFabDialog_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		17DBE155C311FD69EAA6D91B869F431A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1F1FE66E3128D7D5884D8E8BC0C7C52B /* LNFabDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNFabDialog-dummy.m"; sourceTree = "<group>"; };
-		2A5D64706E026B55AEA228467755FCD7 /* LNFabDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNFabDialog-prefix.pch"; sourceTree = "<group>"; };
-		49CF02B69C9D976D6075DB4B59F8709D /* LNFabDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = LNFabDialog.modulemap; sourceTree = "<group>"; };
-		4C2FBB622010BE6100A81AE5 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = LNFabDialog/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
-		4C3BE2B62010B6A3005F0DB3 /* LNFabAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabAlertView.swift; path = LNFabDialog/Classes/LNFabAlertView.swift; sourceTree = "<group>"; };
-		4C3BE2B72010B6A3005F0DB3 /* LNFabDialogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabDialogButton.swift; path = LNFabDialog/Classes/LNFabDialogButton.swift; sourceTree = "<group>"; };
-		4C3BE2B82010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabDialogButtonDelegate.swift; path = LNFabDialog/Classes/LNFabDialogButtonDelegate.swift; sourceTree = "<group>"; };
-		4C3BE2B92010B6A3005F0DB3 /* LNFabItemLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabItemLayout.swift; path = LNFabDialog/Classes/LNFabItemLayout.swift; sourceTree = "<group>"; };
-		4C3BE2BA2010B6A3005F0DB3 /* LNFabItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabItemModel.swift; path = LNFabDialog/Classes/LNFabItemModel.swift; sourceTree = "<group>"; };
-		4C3BE2BB2010B6A3005F0DB3 /* LNFabItemTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LNFabItemTableViewCell.swift; path = LNFabDialog/Classes/LNFabItemTableViewCell.swift; sourceTree = "<group>"; };
-		4C3BE2BC2010B6A3005F0DB3 /* LNFabItemTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LNFabItemTableViewCell.xib; path = LNFabDialog/Classes/LNFabItemTableViewCell.xib; sourceTree = "<group>"; };
+		204CC5456BF8E64C180076EBC0CCB487 /* LNFabDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNFabDialog-umbrella.h"; sourceTree = "<group>"; };
+		2F10DD3230ACA690FA6C2E6DB57DC4BA /* LNFabItemLayout.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNFabItemLayout.swift; path = LNFabDialog/Classes/LNFabItemLayout.swift; sourceTree = "<group>"; };
+		35A06BAC82C263140DE31C5A3C81E3C3 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		366EA1D79D1E04670560498CA2B020B9 /* LNFabAlertView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNFabAlertView.swift; path = LNFabDialog/Classes/LNFabAlertView.swift; sourceTree = "<group>"; };
+		3B5DC75061B9EF8B5452D52612071F58 /* LNFabDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNFabDialog.xcconfig; sourceTree = "<group>"; };
+		4A2698A25B4BE5E29D05FA32B022E718 /* LNFabDialogButton.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNFabDialogButton.swift; path = LNFabDialog/Classes/LNFabDialogButton.swift; sourceTree = "<group>"; };
 		62623629FF0F2914452083C4A87DB702 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6455578A493BA6B76EC455E413F2DD2E /* LNFabDialog-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNFabDialog-umbrella.h"; sourceTree = "<group>"; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		669971934E3DB95A15BACC5D614402B0 /* Pods-LNFabDialog_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LNFabDialog_Example-dummy.m"; sourceTree = "<group>"; };
+		679D438503C8D95A147F0132855BFF5B /* LNFabDialog-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LNFabDialog-prefix.pch"; sourceTree = "<group>"; };
 		6B027F78E0FE27C56F9D5704472DFB14 /* Pods-LNFabDialog_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LNFabDialog_Example-resources.sh"; sourceTree = "<group>"; };
 		6C997ABF7D6670FFEEDD964179D145E9 /* Pods-LNFabDialog_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LNFabDialog_Example-frameworks.sh"; sourceTree = "<group>"; };
 		76C8D5DDB909E0CBBC68DE48DD86D857 /* Pods-LNFabDialog_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LNFabDialog_Tests-dummy.m"; sourceTree = "<group>"; };
-		7AEEC3D6B5863E87A56E3DF5CC9F84D2 /* Pods_LNFabDialog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNFabDialog_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AEEC3D6B5863E87A56E3DF5CC9F84D2 /* Pods_LNFabDialog_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LNFabDialog_Example.framework; path = "Pods-LNFabDialog_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8CE2135DAE382ADB64E5D426912EDFD5 /* UIViewExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIViewExtension.swift; path = LNFabDialog/Classes/UIViewExtension.swift; sourceTree = "<group>"; };
 		8E58A18CD178122CA470A43054508B98 /* Pods-LNFabDialog_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNFabDialog_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		938007092BD8C0BF31AAF5838B7C2B9F /* Pods-LNFabDialog_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LNFabDialog_Tests-umbrella.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9D1989A01B8192FE754BE0AC59E3150F /* Pods-LNFabDialog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LNFabDialog_Example.modulemap"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9B5B45C4A53B5EA9AD9CD9F5A7AE5390 /* LNFabItemTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = LNFabItemTableViewCell.xib; path = LNFabDialog/Classes/LNFabItemTableViewCell.xib; sourceTree = "<group>"; };
+		9C18EBBE3FB29C64EB4AB155FAD9ED35 /* LNFabDialog-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LNFabDialog-dummy.m"; sourceTree = "<group>"; };
+		9D1989A01B8192FE754BE0AC59E3150F /* Pods-LNFabDialog_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LNFabDialog_Example.modulemap"; sourceTree = "<group>"; };
 		A02637AA4E806166E9596FAD5535C330 /* Pods-LNFabDialog_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LNFabDialog_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A122F4810C19EA00DA1FCB6DBA1EDFDA /* Pods_LNFabDialog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LNFabDialog_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A122F4810C19EA00DA1FCB6DBA1EDFDA /* Pods_LNFabDialog_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_LNFabDialog_Tests.framework; path = "Pods-LNFabDialog_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5B334C05CA2851BEDF6DBF6DB313451 /* Pods-LNFabDialog_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNFabDialog_Example.release.xcconfig"; sourceTree = "<group>"; };
 		A6A8220FF708CDEFBB2A80D3EC84C007 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A779888DD699E74C70E12815BC2F1464 /* Pods-LNFabDialog_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNFabDialog_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		A9ACE7B4378F9204A5C579C1965EFED6 /* Pods-LNFabDialog_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LNFabDialog_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B259703CDFD4F9BB333C51FC864419FB /* LNFabDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LNFabDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B259703CDFD4F9BB333C51FC864419FB /* LNFabDialog.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LNFabDialog.framework; path = LNFabDialog.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C4C0C5C9A2C9A6FE9EA3605C7D2DD653 /* LNFabItemModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNFabItemModel.swift; path = LNFabDialog/Classes/LNFabItemModel.swift; sourceTree = "<group>"; };
 		C9126AC81BF407867330BB8170F9086D /* Pods-LNFabDialog_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LNFabDialog_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CF814CC9F111E63013E0B4EBB5AD3743 /* Pods-LNFabDialog_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LNFabDialog_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CFE4D79F82B59EE52B44979D5D45CF4E /* LNFabDialogButtonDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNFabDialogButtonDelegate.swift; path = LNFabDialog/Classes/LNFabDialogButtonDelegate.swift; sourceTree = "<group>"; };
+		D3F567C47DD6B8CB7EC1B968AE31337F /* LNFabDialog.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = LNFabDialog.modulemap; sourceTree = "<group>"; };
 		D50C9B748C56F0BC4C56329BC87C51D5 /* Pods-LNFabDialog_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LNFabDialog_Example-umbrella.h"; sourceTree = "<group>"; };
-		E04F461E9A2424166DCC0AD64A664026 /* Pods-LNFabDialog_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-LNFabDialog_Tests.modulemap"; sourceTree = "<group>"; };
-		E60969EF325BA877896649D611A0A3D2 /* LNFabDialog.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LNFabDialog.xcconfig; sourceTree = "<group>"; };
+		D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E04F461E9A2424166DCC0AD64A664026 /* Pods-LNFabDialog_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-LNFabDialog_Tests.modulemap"; sourceTree = "<group>"; };
+		E45252F240DBFB2CDC23DED870034C1F /* LNFabItemTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = LNFabItemTableViewCell.swift; path = LNFabDialog/Classes/LNFabItemTableViewCell.swift; sourceTree = "<group>"; };
 		E69712BAF5FB247AB8E4957AF4684189 /* Pods-LNFabDialog_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LNFabDialog_Tests-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		50FDE8692C015E9E05FD18D2D000D8A6 /* Frameworks */ = {
+		B2C976B9AC7E55CE06673A0A10F79DFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9339F79A4D51D57909013F2CCFEE4394 /* Foundation.framework in Frameworks */,
+				AD15439D680BF9D81D56269ACE56BE51 /* Foundation.framework in Frameworks */,
+				47B5E81DD26A139EC868CE22D493080A /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,10 +109,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07AA1B3DBA29095B936B115A8B1E9D77 /* Development Pods */ = {
+		19894A4FEC2678C2D89534C363B04DE7 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				9D169A98BCFFAA419F7B6073532E55C7 /* LNFabDialog */,
+				2BDB201EAE940A7A19E6A44996569660 /* LNFabDialog */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -123,41 +127,46 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		4C3BE2B52010B69A005F0DB3 /* Classes */ = {
+		2BDB201EAE940A7A19E6A44996569660 /* LNFabDialog */ = {
 			isa = PBXGroup;
 			children = (
-				4C3BE2B62010B6A3005F0DB3 /* LNFabAlertView.swift */,
-				4C3BE2B72010B6A3005F0DB3 /* LNFabDialogButton.swift */,
-				4C3BE2B82010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift */,
-				4C3BE2B92010B6A3005F0DB3 /* LNFabItemLayout.swift */,
-				4C3BE2BA2010B6A3005F0DB3 /* LNFabItemModel.swift */,
-				4C3BE2BB2010B6A3005F0DB3 /* LNFabItemTableViewCell.swift */,
-				4C3BE2BC2010B6A3005F0DB3 /* LNFabItemTableViewCell.xib */,
-				4C2FBB622010BE6100A81AE5 /* UIViewExtension.swift */,
+				366EA1D79D1E04670560498CA2B020B9 /* LNFabAlertView.swift */,
+				4A2698A25B4BE5E29D05FA32B022E718 /* LNFabDialogButton.swift */,
+				CFE4D79F82B59EE52B44979D5D45CF4E /* LNFabDialogButtonDelegate.swift */,
+				2F10DD3230ACA690FA6C2E6DB57DC4BA /* LNFabItemLayout.swift */,
+				C4C0C5C9A2C9A6FE9EA3605C7D2DD653 /* LNFabItemModel.swift */,
+				E45252F240DBFB2CDC23DED870034C1F /* LNFabItemTableViewCell.swift */,
+				9B5B45C4A53B5EA9AD9CD9F5A7AE5390 /* LNFabItemTableViewCell.xib */,
+				8CE2135DAE382ADB64E5D426912EDFD5 /* UIViewExtension.swift */,
+				C44711B242DD41DC3D6D0D8391B82052 /* Support Files */,
 			);
-			name = Classes;
+			name = LNFabDialog;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		536A8251CF9BB5AD2824AECACDF8C4FD /* Support Files */ = {
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				17DBE155C311FD69EAA6D91B869F431A /* Info.plist */,
-				49CF02B69C9D976D6075DB4B59F8709D /* LNFabDialog.modulemap */,
-				E60969EF325BA877896649D611A0A3D2 /* LNFabDialog.xcconfig */,
-				1F1FE66E3128D7D5884D8E8BC0C7C52B /* LNFabDialog-dummy.m */,
-				2A5D64706E026B55AEA228467755FCD7 /* LNFabDialog-prefix.pch */,
-				6455578A493BA6B76EC455E413F2DD2E /* LNFabDialog-umbrella.h */,
+				438B396F6B4147076630CAEFE34282C1 /* iOS */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/LNFabDialog";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		438B396F6B4147076630CAEFE34282C1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D88AAE1F92055A60CC2FC970D7D34634 /* Foundation.framework */,
+				B63C6A64CF66340668996F78DA6BB482 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				07AA1B3DBA29095B936B115A8B1E9D77 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				19894A4FEC2678C2D89534C363B04DE7 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				2292C361AA5FA66A753754C2A0D299FB /* Products */,
 				80DC346D3E971136C9A73A32AB597C70 /* Targets Support Files */,
 			);
@@ -172,22 +181,18 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		9D169A98BCFFAA419F7B6073532E55C7 /* LNFabDialog */ = {
+		C44711B242DD41DC3D6D0D8391B82052 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				4C3BE2B52010B69A005F0DB3 /* Classes */,
-				536A8251CF9BB5AD2824AECACDF8C4FD /* Support Files */,
+				35A06BAC82C263140DE31C5A3C81E3C3 /* Info.plist */,
+				D3F567C47DD6B8CB7EC1B968AE31337F /* LNFabDialog.modulemap */,
+				3B5DC75061B9EF8B5452D52612071F58 /* LNFabDialog.xcconfig */,
+				9C18EBBE3FB29C64EB4AB155FAD9ED35 /* LNFabDialog-dummy.m */,
+				679D438503C8D95A147F0132855BFF5B /* LNFabDialog-prefix.pch */,
+				204CC5456BF8E64C180076EBC0CCB487 /* LNFabDialog-umbrella.h */,
 			);
-			name = LNFabDialog;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LNFabDialog";
 			sourceTree = "<group>";
 		};
 		D1737E4B2D54830A0E871C410D42FF84 /* Pods-LNFabDialog_Tests */ = {
@@ -206,14 +211,6 @@
 			);
 			name = "Pods-LNFabDialog_Tests";
 			path = "Target Support Files/Pods-LNFabDialog_Tests";
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		E08240E71370FC1FF27144FC5EFA2152 /* Pods-LNFabDialog_Example */ = {
@@ -237,14 +234,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		CC88D94018584331FFBB5B0965224675 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D95C2D92626AB32984A16202FC6392F5 /* LNFabDialog-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D85798A40D9FEA6EC6932E0281AC5BD6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -261,9 +250,34 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		FC6830B064FFBD73CF147DB22840BE85 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D497580E7FB28B3F44C366E46C349ABE /* LNFabDialog-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		4EA88F6A4CFA1D28AF544ABB0900F677 /* LNFabDialog */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6891908953488987B9FAF8FF3CA3CF2 /* Build configuration list for PBXNativeTarget "LNFabDialog" */;
+			buildPhases = (
+				EF12FE1206FE02AF9C08394D58F42973 /* Sources */,
+				B2C976B9AC7E55CE06673A0A10F79DFF /* Frameworks */,
+				FC6830B064FFBD73CF147DB22840BE85 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LNFabDialog;
+			productName = LNFabDialog;
+			productReference = B259703CDFD4F9BB333C51FC864419FB /* LNFabDialog.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5D860B6F0DFA004B36C426187472426A /* Pods-LNFabDialog_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC344632CB6F18092486746401868FAB /* Build configuration list for PBXNativeTarget "Pods-LNFabDialog_Example" */;
@@ -299,23 +313,6 @@
 			productReference = A122F4810C19EA00DA1FCB6DBA1EDFDA /* Pods_LNFabDialog_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		F8679BB2BC731D8FD0ABE826F50CA898 /* LNFabDialog */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63274640E4AC95DD78023A7461C59F9F /* Build configuration list for PBXNativeTarget "LNFabDialog" */;
-			buildPhases = (
-				E1626BA96F46BA58416A9C4896109D85 /* Sources */,
-				50FDE8692C015E9E05FD18D2D000D8A6 /* Frameworks */,
-				CC88D94018584331FFBB5B0965224675 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = LNFabDialog;
-			productName = LNFabDialog;
-			productReference = B259703CDFD4F9BB333C51FC864419FB /* LNFabDialog.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -324,11 +321,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					F8679BB2BC731D8FD0ABE826F50CA898 = {
-						LastSwiftMigration = 0830;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -342,7 +334,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F8679BB2BC731D8FD0ABE826F50CA898 /* LNFabDialog */,
+				4EA88F6A4CFA1D28AF544ABB0900F677 /* LNFabDialog */,
 				5D860B6F0DFA004B36C426187472426A /* Pods-LNFabDialog_Example */,
 				C8B731EE2C4EAD1FE5910AAFE599A24C /* Pods-LNFabDialog_Tests */,
 			);
@@ -366,18 +358,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E1626BA96F46BA58416A9C4896109D85 /* Sources */ = {
+		EF12FE1206FE02AF9C08394D58F42973 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4C3BE2BF2010B6A3005F0DB3 /* LNFabDialogButtonDelegate.swift in Sources */,
-				4C3BE2C02010B6A3005F0DB3 /* LNFabItemLayout.swift in Sources */,
-				4C3BE2C12010B6A3005F0DB3 /* LNFabItemModel.swift in Sources */,
-				4C3BE2BE2010B6A3005F0DB3 /* LNFabDialogButton.swift in Sources */,
-				E7F79CEE8912B363284DEDF195C1AB6F /* LNFabDialog-dummy.m in Sources */,
-				4C3BE2BD2010B6A3005F0DB3 /* LNFabAlertView.swift in Sources */,
-				4C2FBB632010BE6100A81AE5 /* UIViewExtension.swift in Sources */,
-				4C3BE2C22010B6A3005F0DB3 /* LNFabItemTableViewCell.swift in Sources */,
+				8D4A36263E591513787A824835B7EAE5 /* LNFabAlertView.swift in Sources */,
+				D1BD3BB6AA9E2AB8D898894ADEB8E881 /* LNFabDialog-dummy.m in Sources */,
+				58AD13853A9BD06EAC650152BF497769 /* LNFabDialogButton.swift in Sources */,
+				44C01D95C098E485DF3BA44BF7AF7F53 /* LNFabDialogButtonDelegate.swift in Sources */,
+				973A27E950B5E4C3EFEB31457832CD02 /* LNFabItemLayout.swift in Sources */,
+				F605F4EFCF8478E7CD1D9B3FB8CEB2E2 /* LNFabItemModel.swift in Sources */,
+				E9996CF7D1B3A4C17CD74CABC2BF28D9 /* LNFabItemTableViewCell.swift in Sources */,
+				406C51890C01BAF1B3811DE0EB7BA692 /* LNFabItemTableViewCell.xib in Sources */,
+				1D190AB1EE9BCF254DE3056A1F7799B4 /* UIViewExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -387,7 +380,7 @@
 		227303FC042DE4939D8D19124609D85B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = LNFabDialog;
-			target = F8679BB2BC731D8FD0ABE826F50CA898 /* LNFabDialog */;
+			target = 4EA88F6A4CFA1D28AF544ABB0900F677 /* LNFabDialog */;
 			targetProxy = A6252EC18E1B35D3D31FAB9CED30DA35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -515,7 +508,6 @@
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_VERSION = 3.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
@@ -548,6 +540,69 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		45F890614DBFC4C725D26D7479265185 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5DC75061B9EF8B5452D52612071F58 /* LNFabDialog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNFabDialog/LNFabDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNFabDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNFabDialog/LNFabDialog.modulemap";
+				PRODUCT_NAME = LNFabDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		559E93A3401434158E28F947E0CE6DF8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B5DC75061B9EF8B5452D52612071F58 /* LNFabDialog.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LNFabDialog/LNFabDialog-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LNFabDialog/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LNFabDialog/LNFabDialog.modulemap";
+				PRODUCT_NAME = LNFabDialog;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -605,75 +660,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_VERSION = 3.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		770DBC6E94CB12A8FA15CD286D3A4F56 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E60969EF325BA877896649D611A0A3D2 /* LNFabDialog.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNFabDialog/LNFabDialog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNFabDialog/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNFabDialog/LNFabDialog.modulemap";
-				PRODUCT_NAME = LNFabDialog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		BCD33E843159479E9F17965F73177A7A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E60969EF325BA877896649D611A0A3D2 /* LNFabDialog.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/LNFabDialog/LNFabDialog-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/LNFabDialog/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/LNFabDialog/LNFabDialog.modulemap";
-				PRODUCT_NAME = LNFabDialog;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		FD8098E36039972B82E51096DDB3370B /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -720,20 +709,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		63274640E4AC95DD78023A7461C59F9F /* Build configuration list for PBXNativeTarget "LNFabDialog" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				BCD33E843159479E9F17965F73177A7A /* Debug */,
-				770DBC6E94CB12A8FA15CD286D3A4F56 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6DBADB32A939BFC25656E0DE92265552 /* Build configuration list for PBXNativeTarget "Pods-LNFabDialog_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				324FE8FC02F4861D8CDFB784AB05782A /* Debug */,
 				FD8098E36039972B82E51096DDB3370B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6891908953488987B9FAF8FF3CA3CF2 /* Build configuration list for PBXNativeTarget "LNFabDialog" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				559E93A3401434158E28F947E0CE6DF8 /* Debug */,
+				45F890614DBFC4C725D26D7479265185 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

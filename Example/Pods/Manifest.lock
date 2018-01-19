@@ -1,5 +1,5 @@
 PODS:
-  - LNFabDialog (0.1.0)
+  - LNFabDialog (1.2.0)
 
 DEPENDENCIES:
   - LNFabDialog (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  LNFabDialog: 163742408fcc94d7222f4b0d58e48c6925e1550b
+  LNFabDialog: 27d767915ce6f7fe53768cb2a3fed96a54e362ea
 
 PODFILE CHECKSUM: f336b9531e1026902391b1cbbf267b41fca8ef04
 

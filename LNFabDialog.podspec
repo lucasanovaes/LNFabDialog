@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LNFabDialog'
-  s.version          = '1.2.0'
+  s.version          = '1.2.2'
   s.summary          = 'Simple dialog alert from Material Float Action Button'
 
 # This description is used to generate tags and improve search results.

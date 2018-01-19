@@ -34,7 +34,7 @@ internal class LNFabAlertView: UIView{
 
         // Refatorar o model para um unico objeto com uma propriedade [LNFabItemModel] que tem como um dos parametros o TITLE do alert
         
-        setTableViewHeader(title: model.sectionTitle)
+        setTableViewHeader(title: model.sectionTitle, font: model.sectionFont)
         setTableView()
         setAlertShadowLayer()
     }
@@ -69,11 +69,12 @@ internal class LNFabAlertView: UIView{
         alertLayer.shadowOpacity = 0.4
     }
     
-    private func setTableViewHeader(title: String){
+    private func setTableViewHeader(title: String, font: UIFont?){
         tableViewHeader = UIView(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.width))
         
         let supportText = UILabel(frame: CGRect(x: 24, y: 24, width: UIScreen.main.bounds.width - 48, height: 24))
         supportText.text = title
+        supportText.font = font
         tableViewHeader.addSubview(supportText)
     }
     

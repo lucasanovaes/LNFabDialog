@@ -31,7 +31,7 @@ open class LNFabDialogButton: UIView {
     @IBInspectable open var buttonColor: UIColor = UIColor.red
     @IBInspectable open var buttonIconColor: UIColor = UIColor.white
 
-    fileprivate var buttonImageView: UIImageView = UIImageView()
+    open var buttonImageView: UIImageView = UIImageView()
     
     // Button shape layer
     fileprivate var circleLayer: CAShapeLayer = CAShapeLayer()
